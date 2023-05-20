@@ -11,8 +11,10 @@
     },
     "dependencies": {
         "@ayanworks/polygon-did-resolver": "0.0.13",
+        "@cheprasov/react-qrcode": "^1.0.1",
         "cors": "^2.8.5",
-        "express": "^4.18.2"
+        "express": "^4.18.2",
+        "qrcode": "^1.5.3"
     },
     "devDependencies": {
         "@ayanworks/polygon-did-registrar": "0.0.15",

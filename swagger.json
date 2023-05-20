@@ -47,6 +47,86 @@
                 }
             }
         },
+        "/update-transability-did/{did}/{privateKey}": {
+            "post": {
+                "tags": [
+                    "Update transability attached DID"
+                ],
+                "summary": "transability test function",
+                "description": "transability test function",
+                "parameters": [{
+                    "name": "did",
+                    "in": "path",
+                    "required": true
+                }, {
+                    "name": "privateKey",
+                    "in": "path",
+                    "required": true
+                }],
+                "produces": [
+                    "string"
+                ],
+                "responses": {
+                    "200": [{
+                        "description": "OK",
+                        "content":[{
+                            "image/png":[{
+                                "type": "string",
+                                "format": "binary"
+                            }]
+                         }]
+                    }]
+                }
+            }
+        },
+        "/resolve-did/{did}": {
+            "get": {
+                "tags": [
+                    "Resolve polygon DID"
+                ],
+                "summary": "API Endpoint for resolve polygon DID",
+                "description": "Resolve polygon DID",
+                "parameters": [{
+                    "in": "path",
+                    "name": "did",
+                    "required": true
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "New resolve polygon DID"
+                    }
+                }
+            }
+        },
+        "/delete-did/{did}/{privateKey}": {
+            "delete": {
+                "tags": [
+                    "Delete polygon DID"
+                ],
+                "summary": "API Endpoint for delete polygon DID",
+                "description": "Update polygon DID",
+                "parameters": [{
+                    "name": "did",
+                    "in": "path",
+                    "required": true
+                }, {
+                    "name": "privateKey",
+                    "in": "path",
+                    "required": true
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Delete polygon DID"
+                    }
+                }
+            }
+        },
         "/register-did": {
             "post": {
                 "tags": [
@@ -88,28 +168,6 @@
                 "responses": {
                     "201": {
                         "description": "New register polygon DID"
-                    }
-                }
-            }
-        },
-        "/resolve-did/{did}": {
-            "get": {
-                "tags": [
-                    "Resolve polygon DID"
-                ],
-                "summary": "API Endpoint for resolve polygon DID",
-                "description": "Resolve polygon DID",
-                "parameters": [{
-                    "in": "path",
-                    "name": "did",
-                    "required": true
-                }],
-                "produces": [
-                    "application/json"
-                ],
-                "responses": {
-                    "201": {
-                        "description": "New resolve polygon DID"
                     }
                 }
             }
@@ -205,32 +263,6 @@
                 "responses": {
                     "201": {
                         "description": "New update polygon DID"
-                    }
-                }
-            }
-        },
-        "/delete-did/{did}/{privateKey}": {
-            "delete": {
-                "tags": [
-                    "Delete polygon DID"
-                ],
-                "summary": "API Endpoint for delete polygon DID",
-                "description": "Update polygon DID",
-                "parameters": [{
-                    "name": "did",
-                    "in": "path",
-                    "required": true
-                }, {
-                    "name": "privateKey",
-                    "in": "path",
-                    "required": true
-                }],
-                "produces": [
-                    "application/json"
-                ],
-                "responses": {
-                    "201": {
-                        "description": "Delete polygon DID"
                     }
                 }
             }

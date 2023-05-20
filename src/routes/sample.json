@@ -1,0 +1,56 @@
+{
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/citizenship/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "VehicularDatasSet"
+    ],
+    "id": "did:polygon:testnet:0x794b781493AeD65b9ceBD680716fec257e118993",
+    "verificationMethod": [
+      {
+        "id": "did:polygon:testnet:0x794b781493AeD65b9ceBD680716fec257e118993",
+        "type": "EcdsaSecp256k1VerificationKey2019",
+        "controller": [
+          "did:polygon:testnet:0x794b781493AeD65b9ceBD680716fec257e118993",
+          "did:polygon:0x794b781493AeD65b9ceBD680716fec257e118993"
+        ],
+        "publicKeyBase58": "7Lnm1ZnseKDkH1baAb1opREfAU4MPY7zCdUDSrWSm9NxNTQmy4neU9brFUYnEcyy7CwFKjD11ikyP9J8cf6zEaAKrEzzp"
+      }
+    ],
+    "vehicledata": [
+      {
+        "id": "did:Felix:0x794b781493AeD65b9ceBD680716fec257e118993",
+        "type": [
+          "VehicularData",
+          "Car"
+        ],
+        "mileage": "89999",
+        "color": "Blue",
+        "vin": "SCBFR7ZA5CC072256",
+        "image": "data:https://i.imgur.com/sample.jpeg",
+        "year": "2012",
+        "engine displacement ": "366.1424645683",
+        "feul type": "FFV"
+      }
+    ],
+    "issuer": "did:polygon:testnet:0x794b781493AeD65b9ceBD680716fec257e118993",
+    "issuanceDate": "2023-05-17T03:44:32Z",
+    "name": "Vehicle",
+    "description": "Data proof of vehicle data.",
+    "proof": [
+      {
+        "type": "SHA-512",
+        "created": "2023-05-17T03:44:32Z",
+        "hash": "cab5b1c4af8a18a5d53975df381fc530e22dc462116fd1ac08e3e83f05e721e002f86bc60ca03dae7cf772eea1311e61f613428732c6398c42f14984d9337b8b"
+      }
+    ],
+    "serviceEndpoint": [
+      {
+        "id": "a1fc0595c44f6a287b5636b670e5a0be",
+        "type": "FelixGateway",
+        "serviceEndpoint": "https://Felix.access.net/carquery"
+      }
+    ]
+  }
