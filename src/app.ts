@@ -5,7 +5,7 @@ import { DeleteDid } from "./routes/delete-did";
 import { RegisterDid } from "./routes/register-did-on-polygon";
 import { ResolveDid } from "./routes/resolve-did";
 import { UpdateDid } from "./routes/update-did";
-import { RegisterTransabilityDid } from "./routes/update-transability";
+import { RegisterTraceabilityDid } from "./routes/update-traceability";
 import * as swaggerDocument from '../swagger.json';
 import * as swaggerUi from 'swagger-ui-express';
 import * as cors from 'cors';
@@ -20,7 +20,7 @@ class App {
     public registerDidRoutes: RegisterDid = new RegisterDid();
     public resolveDidRoutes: ResolveDid = new ResolveDid();
     public updateDidRoutes: UpdateDid = new UpdateDid();
-    public registerTransabilityDid: RegisterTransabilityDid = new RegisterTransabilityDid();
+    public  RegisterTraceabilityDid:  RegisterTraceabilityDid = new  RegisterTraceabilityDid();
     constructor() {
         this.app = express(); //TK
         this.config();
@@ -30,7 +30,7 @@ class App {
         this.registerDidRoutes.routes(this.app);
         this.resolveDidRoutes.routes(this.app);
         this.updateDidRoutes.routes(this.app);
-        this.registerTransabilityDid.routes(this.app);
+        this. RegisterTraceabilityDid.routes(this.app);
     }
 
     private config(): void {

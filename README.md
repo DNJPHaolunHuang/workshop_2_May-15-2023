@@ -18,25 +18,14 @@ Generate DID & Polygon wallet.
 
 ![Create DID](./img/Create%20polygon%20DID.png)
 
-# Get Test Tokens
-
 Get test token from [faucet.polygon](https://faucet.polygon.technology/) for the gas fee with the wallect address from the create did output.
-![faucet.polygon](./img/faucet.polygon.png)
 
-# Register DID
+# Update traceability DID
 
-After the Test Tokens transfer to wallect, DID could be published with the information according to the create did output.
-
-![Register DID](./img/Register%20polygon%20DID.png)
-
-# Update DID
-
-DID document with mock vehicele informaiton could be attached on the published DID.
-
-![Update DID](./img/Update%20polygon%20DID.png)
+![faucet.polygon](./img/Result%20QRcode%20access%20.png)
 
 # Query result by polygonscan
 
 The execution result is reflected on the [polygonscan](https://mumbai.polygonscan.com/)\
 Filter with the wallect address from create did output.
-![Query ](./img/Query%20operation%20by%20Address%20.png)
+![Query ](./img/result%20DID%20with%20did_document%20.png)

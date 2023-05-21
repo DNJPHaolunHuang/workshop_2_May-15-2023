@@ -47,13 +47,13 @@
                 }
             }
         },
-        "/update-transability-did/{did}/{privateKey}": {
+        "/update-traceability-did/{did}/{privateKey}": {
             "post": {
                 "tags": [
-                    "Update transability attached DID"
+                    "Update traceability DID"
                 ],
-                "summary": "transability test function",
-                "description": "transability test function",
+                "summary": "traceability test function",
+                "description": "traceability test function",
                 "parameters": [{
                     "name": "did",
                     "in": "path",
